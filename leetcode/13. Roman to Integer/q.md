@@ -89,4 +89,4 @@ class Solution:
         return temp_value
 ```
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7d361eeb-8590-4601-8c31-f4aabcc998fc/Untitled.png)
+![Untitled](../../image/leetcode/13_Roman_to_Integer/image.png)
