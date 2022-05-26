@@ -57,9 +57,8 @@ class Solution:
             # n = 3 일 경우 11 이며 01과 bit 연산시 1이 반환
             return_value += (n&1)
             
-            # bit 연산이 완료 된 이후에 오른쪽으로 
+            # bit 연산이 완료 된 이후에 오른쪽으로 시프트 연산 진행
             # 3 = 11 bit 연산 이후 01로 변경
-            # 시프트 연산 진행
             n = n>>1
                 
         return return_value
