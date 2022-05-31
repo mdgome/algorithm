@@ -82,3 +82,15 @@ where E1.managerId = E2.id and E1.salary > E2.salary
 
 ### 실행 결과
 ![Untitled](../../../image/leetcode/181_Employees_Earning_More_Than_Their_Managers/image_1.png)
+
+## 세번째 답안
+```sql
+select E1.name as Employee 
+from Employee as E1
+join Employee as E2
+    on E1.managerId = E2.id
+where E1.salary > E2.salary
+```
+
+### 실행 결과
+![Untitled](../../../image/leetcode/181_Employees_Earning_More_Than_Their_Managers/image_2.png)
