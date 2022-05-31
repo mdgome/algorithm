@@ -76,8 +76,5 @@ from Scores s
 order by s.score Desc;
 ```
 
-## 결과
-
-
-### 결과
-![Untitled](../../../image/leetcode/178_Rank_Scores/image.png)
+# 실행 결과
+![Untitled]((../../../image/leetcode/178_Rank_Scores/image.png)
