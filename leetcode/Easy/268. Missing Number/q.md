@@ -48,4 +48,4 @@ class Solution:
 ```
 
 # 실행 결과
-![Untitled](../../../image/leetcode/168_Missing_Number/image.png)
+![Untitled](../../../image/leetcode/268_Missing_Number/image.png)
