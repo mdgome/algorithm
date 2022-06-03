@@ -96,14 +96,31 @@ Explanation: If there is only one node on the tree, you only need to output its 
 
 # Answer
 
+## 첫번째 답안
 ```sql
 select id,
 (case when p_id is null then 'Root'
      when id in (select p_id from tree) then 'Inner'
      else 'Leaf' end) as Type
-from tree
+from Tree
 ```
 
-## 실행 결과
+### 실행 결과
+![Untitled](../../../image/leetcode/608_Tree_Node/image_0.png)
 
-![Untitled](../../../image/leetcode/608_Tree_Node/image.png)
+## 두번째 답안
+
+```sql
+select distinct t1.id,
+(case when t1.p_id is null then 'Root'
+    when t1.p_id is not null AND t2.id is not null then 'Inner'
+    when t1.p_id is not null AND t2.id is null then 'Leaf'
+    end
+) as Type 
+from tree t1
+left join tree t2
+    on t1.id = t2.p_id
+```
+
+### 실행 결과
+![Untitled](../../../image/leetcode/608_Tree_Node/image_1.png)
