@@ -69,16 +69,9 @@ SELECT
 FROM occupations
 ORDER BY name;
 
-WITH cnt as (
-    SELECT 
-        occupation
-        , count(occupation) as cnt
-    FROM occupations
-    GROUP BY occupation
-    )
-
 SELECT 
-    CONCAT('There are a total of ', cnt, ' ', LOWER(occupation), 's.')
-FROM cnt
-ORDER BY cnt, occupation;
+    CONCAT('There are a total of ', COUNT(occupation), ' ', LOWER(occupation), 's.')
+FROM occupations
+GROUP BY occupation
+ORDER BY COUNT(occupation), occupation;
 ```
