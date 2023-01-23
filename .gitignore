@@ -1,7 +1,7 @@
-data/
-data
-*/data
-*/data/*
+data*/
+data*
+*/data*
+*/data*/*
 docker/mysql/my-slow.log
 docker/mysql/my.cnf
 .DS_Store
